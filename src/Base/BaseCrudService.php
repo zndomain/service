@@ -6,7 +6,7 @@ use ZnDomain\Domain\Enums\EventEnum;
 use ZnDomain\Domain\Events\QueryEvent;
 use ZnDomain\Domain\Traits\DispatchEventTrait;
 use ZnDomain\Domain\Traits\ForgeQueryTrait;
-use ZnDomain\Entity\Exceptions\NotFoundException;
+use ZnCore\Contract\Common\Exceptions\NotFoundException;
 use ZnDomain\Entity\Interfaces\EntityIdInterface;
 use ZnCore\Instance\Helpers\ClassHelper;
 use ZnDomain\Query\Entities\Query;
