@@ -2,8 +2,8 @@
 
 namespace ZnDomain\Service\Traits;
 
+use ZnCore\Code\Helpers\PropertyHelper;
 use ZnDomain\Domain\Enums\EventEnum;
-use ZnDomain\Entity\Helpers\EntityHelper;
 
 trait CrudServiceUpdateTrait
 {
@@ -15,7 +15,7 @@ trait CrudServiceUpdateTrait
         }
         try {
             $entity = $this->getRepository()->findOneById($id);
-            EntityHelper::setAttributes($entity, $data);
+            PropertyHelper::setAttributes($entity, $data);
             $event = $this->dispatchEntityEvent($entity, EventEnum::BEFORE_UPDATE_ENTITY);
             $this->getRepository()->update($entity);
             $event = $this->dispatchEntityEvent($entity, EventEnum::AFTER_UPDATE_ENTITY);
