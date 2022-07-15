@@ -4,7 +4,7 @@ namespace ZnDomain\Service\Traits;
 
 use ZnCore\Collection\Interfaces\Enumerable;
 use ZnDomain\DataProvider\Libs\DataProvider;
-use ZnCore\Query\Entities\Query;
+use ZnDomain\Query\Entities\Query;
 
 trait CrudServiceFindAllTrait
 {

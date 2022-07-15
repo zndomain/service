@@ -3,7 +3,7 @@
 namespace ZnDomain\Service\Traits;
 
 use ZnDomain\Domain\Enums\EventEnum;
-use ZnCore\Entity\Helpers\EntityHelper;
+use ZnDomain\Entity\Helpers\EntityHelper;
 
 trait CrudServiceUpdateTrait
 {

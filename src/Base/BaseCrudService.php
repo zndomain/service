@@ -6,10 +6,10 @@ use ZnDomain\Domain\Enums\EventEnum;
 use ZnDomain\Domain\Events\QueryEvent;
 use ZnDomain\Domain\Traits\DispatchEventTrait;
 use ZnDomain\Domain\Traits\ForgeQueryTrait;
-use ZnCore\Entity\Exceptions\NotFoundException;
-use ZnCore\Entity\Interfaces\EntityIdInterface;
+use ZnDomain\Entity\Exceptions\NotFoundException;
+use ZnDomain\Entity\Interfaces\EntityIdInterface;
 use ZnCore\Instance\Helpers\ClassHelper;
-use ZnCore\Query\Entities\Query;
+use ZnDomain\Query\Entities\Query;
 use ZnDomain\QueryFilter\Interfaces\ForgeQueryByFilterInterface;
 use ZnDomain\Repository\Interfaces\CrudRepositoryInterface;
 use ZnDomain\Service\Interfaces\CrudServiceInterface;
@@ -18,7 +18,7 @@ use ZnDomain\Service\Traits\CrudServiceDeleteTrait;
 use ZnDomain\Service\Traits\CrudServiceFindAllTrait;
 use ZnDomain\Service\Traits\CrudServiceFindOneTrait;
 use ZnDomain\Service\Traits\CrudServiceUpdateTrait;
-use ZnCore\Validation\Helpers\ValidationHelper;
+use ZnDomain\Validator\Helpers\ValidationHelper;
 
 /**
  * @method CrudRepositoryInterface getRepository()

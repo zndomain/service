@@ -3,7 +3,7 @@
 namespace ZnDomain\Service\Interfaces;
 
 use ZnDomain\DataProvider\Libs\DataProvider;
-use ZnCore\Query\Entities\Query;
+use ZnDomain\Query\Entities\Query;
 
 interface ServiceDataProviderInterface
 {
